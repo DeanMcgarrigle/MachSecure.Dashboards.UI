@@ -1,0 +1,47 @@
+{
+  "name": "MachSecure.Dashboards.UI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Dean McGarrigle",
+  "license": "ISC",
+  "dependencies": {
+    "babelify": "^6.1.3",
+    "brfs": "^1.4.1",
+    "browserify": "^11.0.1",
+    "browserify-ngannotate": "^1.0.1",
+    "browserify-shim": "^3.8.10",
+    "debowerify": "^1.3.1",
+    "del": "^1.2.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-changed": "^1.3.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-streamify": "^1.0.0",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.6",
+    "gulp-webserver": "^0.9.1",
+    "imagemin-pngcrush": "^4.1.0",
+    "partialify": "^3.1.5",
+    "pretty-hrtime": "^1.0.0",
+    "run-sequence": "^1.1.2",
+    "tiny-lr": "^0.1.6",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.3.1"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "jquery": "global:$"
+  }
+}
