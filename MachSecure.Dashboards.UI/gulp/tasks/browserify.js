@@ -11,7 +11,6 @@ var browserify = require('browserify');
 var babelify = require('babelify');
 var uglify = require('gulp-uglify');
 var handleErrors = require('../util/handleErrors');
-var browserSync = require('browser-sync');
 var debowerify = require('debowerify');
 var partialify = require('partialify');
 var ngAnnotate = require('browserify-ngannotate');
@@ -63,7 +62,6 @@ function buildScript(file) {
             }))))
             .pipe(gulpif(createSourcemap, sourcemaps.write('./')))
             .pipe(gulp.dest(config.scripts.dest))
-            .pipe(gulpif(browserSync.active, browserSync.reload({stream: true, once: true})));
     }
 
     return rebundle();
